@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>emergencyapp</title>
+
+<link rel="stylesheet" type="text/css" href="indexcss.css">
+</head>
+
+<body>
+
+<div class="cont">
+<div class="form sign-in">
+<h2>Login here</h2>
+<form name="myForm" onSubmit="return(validateLogin());">
+<label><span>Email Address</span>
+<input type="email" name="email" id="loginemail"></label>
+<label><span>Password</span>
+<input type="password" name="password" id="loginpassword"></label>
+<button type="submit" class="submit"><a href="AgentDashboard.html">Login</a></button>
+
+</form>
+
+<p class="forgot-pass">Forgot Password ?</p>
+<div class="social-media">
+<ul>
+<li><img src="img/facebook.png"></li>
+<li><img src="img/instagram.png"></li>
+<li><img src="img/mail.png"></li>
+<li><img src="img/twitter.png"></li>
+</ul>
+</div>
+</div>
+
+
+<div class="sub-cont">
+<div class="img">
+<div class="img-text m-up">
+<h2>In case of Emergency</h2>
+<p>Create Agent Account here </p>
+</div>
+<div class="img-text m-in" >
+<h2>You already has account ?</h2>
+<p>In case of Emergency</p>
+<p>Login here !</p>
+</div>
+
+<div class="img-btn">
+<span class="m-in">Create </span>
+<span class="m-up">Switch</span>
+</div>
+</div>
+<div class="form sign-up" id="form">
+<h2>Create Agent Account </h2>
+<form name="myForm1" onSubmit="return(createValidate());">
+<label><span>Fullname</span>
+<input type="text" name="name" id="name"></label>
+<label><span>Email Address</span>
+<input type="email" name="email" id="email"></label>
+<label><span>Password</span>
+<input type="password" name="password" id="password"></label>
+<label><span>Confirm Password</span>
+<input type="password" name="confirm" id="confirm"></label>
+<label><span>SignUp As</span>
+<select name="status" id="status"><option>Select Here</option><option>Admin</option><option>Agent</option></select></label>
+<button type="submit" class="submit"><a href="admin_dashboard.html">Create Account</a></button>
+</form>
+
+
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript" src="indexscript.js"></script>
+</body>
+</html>
